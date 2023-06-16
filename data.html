@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="data.css">
+  <script src="script.js"></script>
+  <title>NourishPal</title>
+</head>
+<body>
+  <div class="box">
+    <form onsubmit="saveUserData(event)">
+      <input class="input-area" placeholder="Names" type="text" id="nameInput" name="name" required />
+      <input class="input-area" type="text" id="nicknameInput" name="nickname" placeholder="Username" required/>
+      <input class="input-area" type="date" id="birthdateInput" name="birthdate" required/>
+      <select class="input-area" name="gender" id="genderInput">
+        <option value="ma">Male</option>
+        <option value="fe">Female</option>
+      </select>
+      <select class="input-area" name="diet" id="dietInput">
+        <option value="all">All Diets</option>
+        <option value="vegt">Vegetarian</option>
+        <option value="veg">Vegan</option>
+        <option value="gt">Gluten Free</option>
+        <option value="lt">Lactose-Free</option>
+        <option value="gr">Grain-Free</option>
+        <option value="lc">Low-Carbon</option>
+        <option value="ls">Low-salt</option>
+        <option value="kf">Kid-Friendly</option>
+      </select>
+      <button class="butn" type="submit">Continue</button>
+    </form>
+  </div>
+</body>
+</html>
